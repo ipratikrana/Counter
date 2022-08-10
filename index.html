@@ -22,7 +22,7 @@
       document.getElementById("timer003").innerHTML = days003 + "d " + hours003 + "h " + minutes003 + "m " + seconds003 + "s ";
       if (distance003 < 0) {
         clearInterval(x);
-        document.getElementById("timer003").innerHTML = "EXPIRED";
+        document.getElementById("timer003").innerHTML = "Congratulations JEEM 1 Have ended!! Enjoy and Prepare for Adv";
       } 
     var x = setInterval(function() {
       var now003 = new Date().getTime();
@@ -33,7 +33,7 @@
       var seconds003 = Math.floor((distance003 % (1000 * 60)) / 1000);
       document.getElementById("timer003").innerHTML = days003 + "d " + hours003 + "h " + minutes003 + "m " + seconds003 + "s ";
       if (distance003 < 0) {
-        clearInterval(003);
+        clearInterval(x);
         document.getElementById("demo").innerHTML = "EXPIRED";
       }
     }, 1000);
@@ -51,8 +51,7 @@
       var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-      document.getElementById("timer").innerHTML = days + "d " + hours + "h "
-      + minutes + "m " + seconds + "s ";
+      document.getElementById("timer").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
       if (distance < 0) {
         clearInterval(x);
         document.getElementById("demo").innerHTML = "EXPIRED";
