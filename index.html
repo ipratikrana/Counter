@@ -21,8 +21,8 @@
       var seconds003 = Math.floor((distance003 % (1000 * 60)) / 1000);
       document.getElementById("timer003").innerHTML = days003 + "d " + hours003 + "h " + minutes003 + "m " + seconds003 + "s ";
       if (distance003 < 0) {
-        clearInterval(003);
-        document.getElementById("demo").innerHTML = "EXPIRED";
+        clearInterval(x);
+        document.getElementById("timer003").innerHTML = "EXPIRED";
       } 
     var x = setInterval(function() {
       var now003 = new Date().getTime();
